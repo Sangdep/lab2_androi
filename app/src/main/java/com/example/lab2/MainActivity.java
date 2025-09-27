@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
 
             // Chuyển sang trang tạo hóa đơn (MainActivity hoặc InvoiceActivity)
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            Intent intent = new Intent(MainActivity.this, activity_gd.class);
             // Có thể truyền thông tin user qua Intent
             intent.putExtra("username", username);
             intent.putExtra("remember_me", cbRememberMe.isChecked());
